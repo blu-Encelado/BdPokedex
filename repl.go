@@ -16,7 +16,7 @@ func startRepl() {
 	client := NewClient()
 
 	for {
-		fmt.Print("Pokedex >")
+		fmt.Print("Pokedex > ")
 		reader.Scan()
 
 		words := cleanInput((reader.Text()))

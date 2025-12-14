@@ -24,7 +24,7 @@ func commandExplore(cfg *config, c *client, s string) error {
 	}
 
 	if len(areaData.PokemonEncounters) == 0 {
-		fmt.Println("No pokemon in this area")
+		fmt.Println("No pokemons in this area")
 		return nil
 	}
 
@@ -34,6 +34,7 @@ func commandExplore(cfg *config, c *client, s string) error {
 
 	return nil
 }
+
 func unMarshalOnLocArea(body []byte) (locationArea, error) {
 	loc := locationArea{}
 
